@@ -10,3 +10,8 @@ that you'll never see if you do follow them.  So let's strip those away.
 
  - oauth with twitter so you can click a follow button from the site
  - get twitter's suggestions for who to follow
+
+### should-fix
+
+ - favicon.ico in /img or something, otherwise flask tries a twitter handle lookup
+

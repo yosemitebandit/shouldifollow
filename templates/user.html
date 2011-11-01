@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>should I follow {{ user }}?</title>
+
+    </head>
+
+    <body>
+
+        {% if error %}
+        aw man, got an error looking up {{ user }}.  Their tweets may be protected.
+        {% else %}
+
+        info on {{ user }}
+        {% if statuses %}
+        <table>
+            {% for s in statuses %}
+            <tr><td> {{ s.text }} </td></tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+
+        {% endif %}  {= /error-check =}
+
+        
+
+    </body>
+
+</html>
+
